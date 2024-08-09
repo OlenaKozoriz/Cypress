@@ -4,9 +4,9 @@ import InventoryPage from "../../support/POM/InventoryPage";
 
 describe("Actions on Inventory Page", () => {
   beforeEach(() => {
-    cy.visit("/");
-    LoginPage.typeUsername("standard_user")
-      .typePassword("secret_sauce")
+    cy.visit(Cypress.env("BASE_URL"));
+    LoginPage.typeUsername(Cypress.env("USER_NAME"))
+      .typePassword(Cypress.env("USER_PASSWORD"))
       .clickLoginButton();
   });
 

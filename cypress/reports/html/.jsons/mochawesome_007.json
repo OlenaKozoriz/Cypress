@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-09T13:19:25.296Z",
+    "end": "2024-08-09T13:19:33.195Z",
+    "duration": 7899,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dd7b47b2-cce7-4643-8d5e-6bfd7c979273",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cypress_POM\\saucedemoItemPOM.cy.js",
+      "file": "cypress\\e2e\\cypress_POM\\saucedemoItemPOM.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7e26935b-4ba9-4f77-ae3b-43db75460e97",
+          "title": "Actions on Item Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Assertions that the elements of the Item exist",
+              "fullTitle": "Actions on Item Page Assertions that the elements of the Item exist",
+              "timedOut": null,
+              "duration": 2597,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.labsBackpackClick();\n_ItemPage.default.ifElementsOfItemExist();",
+              "err": {},
+              "uuid": "86d8b604-b337-4d67-8470-66b27e00c8b9",
+              "parentUUID": "7e26935b-4ba9-4f77-ae3b-43db75460e97",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assertion that the 'Remove' button exists after adding the Item to the Cart",
+              "fullTitle": "Actions on Item Page Assertion that the 'Remove' button exists after adding the Item to the Cart",
+              "timedOut": null,
+              "duration": 1243,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.labsBackpackClick();\n_ItemPage.default.ifRemoveButtonExist();",
+              "err": {},
+              "uuid": "f00c5c65-5c0b-431c-af0c-fe7cf21ae589",
+              "parentUUID": "7e26935b-4ba9-4f77-ae3b-43db75460e97",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assertion that the 'Add to Cart' button exists after clicking on the 'Remove' button",
+              "fullTitle": "Actions on Item Page Assertion that the 'Add to Cart' button exists after clicking on the 'Remove' button",
+              "timedOut": null,
+              "duration": 1846,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.labsBackpackClick();\n_ItemPage.default.ifRemoveButtonExist();\n_ItemPage.default.ifAddToCartButtonExist();",
+              "err": {},
+              "uuid": "39f3b6ed-6132-4fac-9eab-dd49e55ad7fc",
+              "parentUUID": "7e26935b-4ba9-4f77-ae3b-43db75460e97",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "86d8b604-b337-4d67-8470-66b27e00c8b9",
+            "f00c5c65-5c0b-431c-af0c-fe7cf21ae589",
+            "39f3b6ed-6132-4fac-9eab-dd49e55ad7fc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5686,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
