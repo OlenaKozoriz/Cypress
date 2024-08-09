@@ -1,0 +1,155 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2024-08-09T13:14:46.748Z",
+    "end": "2024-08-09T13:15:26.138Z",
+    "duration": 39390,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "52c61f7c-0646-4549-8414-4f0072987af5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cypress_POM\\saucedemoItemPOM.cy.js",
+      "file": "cypress\\e2e\\cypress_POM\\saucedemoItemPOM.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "32a50010-1b45-4c45-a426-0dbca851fb4b",
+          "title": "Actions on Item Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Assertions that the elements of the Item exist",
+              "fullTitle": "Actions on Item Page Assertions that the elements of the Item exist",
+              "timedOut": null,
+              "duration": 12758,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.labsBackpackClick();\n_ItemPage.default.ifElementsOfItemExist();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-test=\"item-sauce-labs-backpack-img\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-test=\"item-sauce-labs-backpack-img\"]`, but never found it.\n    at InventoryPage.ifElementsOfItemExist (webpack://cypress/./cypress/support/POM/ItemPage.js:23:19)\n    at Context.eval (webpack://cypress/./cypress/e2e/cypress_POM/saucedemoItemPOM.cy.js:16:13)",
+                "diff": null
+              },
+              "uuid": "461710c8-ffe4-40a3-89be-d5a3b367dab4",
+              "parentUUID": "32a50010-1b45-4c45-a426-0dbca851fb4b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assertion that the 'Remove' button exists after adding the Item to the Cart",
+              "fullTitle": "Actions on Item Page Assertion that the 'Remove' button exists after adding the Item to the Cart",
+              "timedOut": null,
+              "duration": 12732,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.labsBackpackClick();\n_ItemPage.default.ifRemoveButtonExist();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-test=\"remove\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-test=\"remove\"]`, but never found it.\n    at InventoryPage.ifRemoveButtonExist (webpack://cypress/./cypress/support/POM/ItemPage.js:31:22)\n    at Context.eval (webpack://cypress/./cypress/e2e/cypress_POM/saucedemoItemPOM.cy.js:21:13)",
+                "diff": null
+              },
+              "uuid": "7a516cb5-35d5-4a13-8f3e-780b026530a8",
+              "parentUUID": "32a50010-1b45-4c45-a426-0dbca851fb4b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assertion that the 'Add to Cart' button exists after clicking on the 'Remove' button",
+              "fullTitle": "Actions on Item Page Assertion that the 'Add to Cart' button exists after clicking on the 'Remove' button",
+              "timedOut": null,
+              "duration": 11633,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.labsBackpackClick();\n_ItemPage.default.ifRemoveButtonExist();\n_ItemPage.default.ifAddToCartButtonExist();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-test=\"remove\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-test=\"remove\"]`, but never found it.\n    at InventoryPage.ifRemoveButtonExist (webpack://cypress/./cypress/support/POM/ItemPage.js:31:22)\n    at Context.eval (webpack://cypress/./cypress/e2e/cypress_POM/saucedemoItemPOM.cy.js:26:13)",
+                "diff": null
+              },
+              "uuid": "af436609-a56b-41d3-afbd-754edfb994c5",
+              "parentUUID": "32a50010-1b45-4c45-a426-0dbca851fb4b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "461710c8-ffe4-40a3-89be-d5a3b367dab4",
+            "7a516cb5-35d5-4a13-8f3e-780b026530a8",
+            "af436609-a56b-41d3-afbd-754edfb994c5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 37123,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

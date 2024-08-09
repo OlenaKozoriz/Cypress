@@ -5,9 +5,9 @@ import ItemPage from "../../support/POM/ItemPage";
 
 describe("Actions on Item Page", () => {
   beforeEach(() => {
-    cy.visit("/");
-    LoginPage.typeUsername("standard_user")
-      .typePassword("secret_sauce")
+    cy.visit(Cypress.env("BASE_URL"));
+    LoginPage.typeUsername(Cypress.env("USER_NAME"))
+      .typePassword(Cypress.env("USER_PASSWORD"))
       .clickLoginButton();
   });
 

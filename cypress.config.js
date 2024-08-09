@@ -2,7 +2,12 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://www.saucedemo.com",
+    //Environment variables
+    env: {
+      BASE_URL: "https://www.saucedemo.com/",
+      USER_NAME: "standard_user",
+      USER_PASSWORD: "secret_sauce",
+    },
     chromeWebSecurity: false,
     defaultCommandTimeout: 10000,
     pageLoadTimeout: 20000,
@@ -12,7 +17,7 @@ module.exports = defineConfig({
     viewportHeight: 660,
     viewportWidth: 1000,
     specPattern: "**/*.cy.{js,jsx,ts,tsx}",
-    reporter: "spec",
+    reporter: "cypress-mochawesome-reporter",
     testIsolation: true,
   },
 });
