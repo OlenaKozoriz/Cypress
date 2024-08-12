@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-09T13:14:32.735Z",
+    "end": "2024-08-09T13:14:44.151Z",
+    "duration": 11416,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e7a9e4e3-7168-4763-930d-1b94d62fabb3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cypress_POM\\saucedemoInventoryPOM.cy.js",
+      "file": "cypress\\e2e\\cypress_POM\\saucedemoInventoryPOM.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b7382c9c-effe-475b-9129-b4c098955d7f",
+          "title": "Actions on Inventory Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Assertions of the web-elements visibility",
+              "fullTitle": "Actions on Inventory Page Assertions of the web-elements visibility",
+              "timedOut": null,
+              "duration": 3949,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.ifElementsVisible();",
+              "err": {},
+              "uuid": "68af6e2a-14d5-4188-b0ec-d86eb136971e",
+              "parentUUID": "b7382c9c-effe-475b-9129-b4c098955d7f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assertion that the sort drop-down options exist",
+              "fullTitle": "Actions on Inventory Page Assertion that the sort drop-down options exist",
+              "timedOut": null,
+              "duration": 1763,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.verifyDropDownOptions();",
+              "err": {},
+              "uuid": "2b2c3e78-cfb4-4066-93c2-a3834ada00e1",
+              "parentUUID": "b7382c9c-effe-475b-9129-b4c098955d7f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assertion of the URL after clicking on the Cart",
+              "fullTitle": "Actions on Inventory Page Assertion of the URL after clicking on the Cart",
+              "timedOut": null,
+              "duration": 1122,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.cartClick();\ncy.url().should(\"include\", \"cart.html\");",
+              "err": {},
+              "uuid": "f28ceb94-aaa6-4b6b-819b-a1a0de8246d8",
+              "parentUUID": "b7382c9c-effe-475b-9129-b4c098955d7f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assertion that correct Item is opened after clicking on it",
+              "fullTitle": "Actions on Inventory Page Assertion that correct Item is opened after clicking on it",
+              "timedOut": null,
+              "duration": 1117,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.labsBackpackClick();",
+              "err": {},
+              "uuid": "5e99badd-f2bf-411c-94a1-d7c1d74b3b09",
+              "parentUUID": "b7382c9c-effe-475b-9129-b4c098955d7f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "68af6e2a-14d5-4188-b0ec-d86eb136971e",
+            "2b2c3e78-cfb4-4066-93c2-a3834ada00e1",
+            "f28ceb94-aaa6-4b6b-819b-a1a0de8246d8",
+            "5e99badd-f2bf-411c-94a1-d7c1d74b3b09"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7951,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
