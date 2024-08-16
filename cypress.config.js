@@ -17,7 +17,7 @@ module.exports = defineConfig({
     viewportHeight: 660,
     viewportWidth: 1000,
     specPattern: "**/*.cy.{js,jsx,ts,tsx}",
-    reporter: "cypress-mochawesome-reporter",
+    reporter: "spec",
     testIsolation: true,
   },
 });
