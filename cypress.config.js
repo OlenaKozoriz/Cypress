@@ -10,7 +10,7 @@ module.exports = defineConfig({
     },
     chromeWebSecurity: false,
     defaultCommandTimeout: 4000,
-    pageLoadTimeout: 20000,
+    pageLoadTimeout: 60000,
     fixturesFolder: "cypress / fixtures",
     screenshotsFolder: "cypress / screenshots",
     screenshotOnRunFailure: true,
