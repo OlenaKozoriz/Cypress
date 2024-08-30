@@ -9,7 +9,7 @@ module.exports = defineConfig({
       USER_PASSWORD: "secret_sauce",
     },
     chromeWebSecurity: false,
-    defaultCommandTimeout: 10000,
+    defaultCommandTimeout: 4000,
     pageLoadTimeout: 20000,
     fixturesFolder: "cypress / fixtures",
     screenshotsFolder: "cypress / screenshots",
